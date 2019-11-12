@@ -96,6 +96,14 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   
   director_index = 0
+  result = []
+  
+  while director_index < source.length do
+    director_name = source[director_index][:name]
+    movie_index = 0
+    pp source[director_index][:movies]
+    director_index += 1
+  end
   
 end
 
