@@ -106,7 +106,7 @@ def movies_with_directors_set(source)
       
       movie_index += 1 
     end
-    result[director_index] = director_array
+    result[movie_index] = director_array
     
     director_index += 1
   end
