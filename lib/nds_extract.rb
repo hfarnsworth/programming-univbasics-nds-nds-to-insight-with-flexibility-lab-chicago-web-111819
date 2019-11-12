@@ -79,7 +79,11 @@ def gross_per_studio(collection)
   
   while movie_index < collection.length do
     studio_key = collection[:studio]
+    result[studio_key] += collection[:worldwide_gross]
+    movie_index += 1 
+  end
   
+  result
 end
 
 def movies_with_directors_set(source)
