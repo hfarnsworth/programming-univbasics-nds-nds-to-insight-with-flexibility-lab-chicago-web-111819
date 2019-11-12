@@ -78,6 +78,7 @@ def gross_per_studio(collection)
   result = {}
   
   
+  
 end
 
 def movies_with_directors_set(source)
@@ -98,7 +99,15 @@ def movies_with_directors_set(source)
   while director_index < source.length do
     director_name = source[director_index][:name]
     movie_index = 0
-    pp source[director_index][:movies]
+    
+    while movie_index < source[director_index][:movies].length do 
+      director_array = []
+      
+      director_array << { :"director_name"=>
+      
+      movie_index += 1 
+    end
+      
     director_index += 1
   end
   
