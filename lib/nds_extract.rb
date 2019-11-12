@@ -99,11 +99,10 @@ def movies_with_directors_set(source)
   while director_index < source.length do
     director_name = source[director_index][:name]
     movie_index = 0
-    puts director_name
     
     while movie_index < source[director_index][:movies].length do 
       director_array = []
-      
+      director_array << { :director_name=> director_name, 
       
       
       movie_index += 1 
