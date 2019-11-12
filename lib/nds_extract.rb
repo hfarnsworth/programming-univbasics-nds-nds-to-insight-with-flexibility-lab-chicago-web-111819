@@ -78,8 +78,8 @@ def gross_per_studio(collection)
   result = {}
   
   while movie_index < collection.length do
-    studio_key = collection[:studio]
-    result[studio_key] += collection[:worldwide_gross]
+    studio_key = collection[movie_index][:studio]
+    result[studio_key] += collection[movie_index][:worldwide_gross]
     movie_index += 1 
   end
   
